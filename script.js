@@ -6,13 +6,13 @@
 const firstCard = document.querySelector('[data-event="talk"]');
 const labStatus = document.querySelector("#lab-status");
 
-firstCard.addEventListener("click", () => {
-  labStatus.textContent = "Открыта первая карточка";
-});
+const eventName = "Город в деталях";
+let clickCount = 0;
 
-// 02–03. Вы будете постепенно менять обработчик выше: добавите
-// переменные, счетчик нажатий и условие. Не создавайте второй
-// обработчик для той же карточки, пока не разобрались с первым.
+firstCard.addEventListener("click", () => {
+  clickCount = clickCount + 1;
+  labStatus.textContent = `${eventName}: нажатий ${clickCount}`;
+});
 
 // 04–05. Найдете элементы панели и подключите вторую карточку.
 

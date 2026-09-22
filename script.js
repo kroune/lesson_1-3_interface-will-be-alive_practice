@@ -20,7 +20,11 @@ firstCard.addEventListener("click", () => {
   detailsTitle.textContent = eventName;
 });
 
-// 05. Подключите вторую карточку к панели.
+const secondCard = document.querySelector('[data-event="workshop"]');
+
+secondCard.addEventListener("click", () => {
+  detailsTitle.textContent = "Мастерская постеров";
+});
 
 // 06. Сравните учебный массив с коллекцией карточек из DOM.
 

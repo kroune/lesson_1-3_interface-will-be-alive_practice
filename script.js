@@ -5,6 +5,7 @@
 
 const firstCard = document.querySelector('[data-event="talk"]');
 const labStatus = document.querySelector("#lab-status");
+const detailsTitle = document.querySelector("#details-title");
 
 const eventName = "Город в деталях";
 let clickCount = 0;
@@ -16,9 +17,10 @@ firstCard.addEventListener("click", () => {
   } else {
     labStatus.textContent = `Повторное открытие: ${eventName}`;
   }
+  detailsTitle.textContent = eventName;
 });
 
-// 04–05. Найдете элементы панели и подключите вторую карточку.
+// 05. Подключите вторую карточку к панели.
 
 // 06. Сравните учебный массив с коллекцией карточек из DOM.
 
